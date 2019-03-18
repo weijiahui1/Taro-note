@@ -1,14 +1,21 @@
+// 项目通用配置
 const config = {
+  // 项目名称
   projectName: 'myReduxDemo',
+  // 项目创建日期
   date: '2019-2-21',
+  // 设计稿尺寸
   designWidth: 750,
   deviceRatio: {
     '640': 2.34 / 2,
     '750': 1,
     '828': 1.81 / 2
   },
+  // 项目源码目录
   sourceRoot: 'src',
+  // 项目产出目录
   outputRoot: 'dist',
+  // 通用插件配置
   plugins: {
     babel: {
       sourceMap: true,
@@ -24,14 +31,17 @@ const config = {
       ]
     }
   },
+  // 全局变量设置
   defineConstants: {
   },
+  // 文件 copy 配置
   copy: {
     patterns: [
     ],
     options: {
     }
   },
+  // 小程序端专用配置
   weapp: {
     module: {
       postcss: {
@@ -67,6 +77,7 @@ const config = {
       }
     }
   },
+  // H5 端专用配置
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
