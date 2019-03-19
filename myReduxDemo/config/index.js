@@ -31,7 +31,7 @@ const config = {
       ]
     }
   },
-  // 全局变量设置
+  // 全局变量设置：用来配置一些全局变量供代码中进行使用
   defineConstants: {
   },
   // 文件 copy 配置

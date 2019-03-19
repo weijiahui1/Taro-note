@@ -1,13 +1,15 @@
 {
-  "miniprogramRoot": "./dist",
-  "projectname": "myReduxDemo",
-  "description": "Taro + ts + redux + sass",
-  "appid": "touristappid",
-  "setting": {
-    "urlCheck": true,
-    "es6": false,
-    "postcss": false,
-    "minified": false
-  },
-  "compileType": "miniprogram"
+	"miniprogramRoot": "./dist",
+	"projectname": "myReduxDemo",
+	"description": "Taro + ts + redux + sass",
+	"appid": "touristappid",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"condition": {}
 }
