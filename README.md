@@ -7,7 +7,7 @@
 
 
 ### API注意的点：
-##### 1.事件处理
+##### 1. 事件处理
     任何组件的事件传递都要以 on 开头
     在微信小程序中，可能你会看到像 bindTap 这样的用法，但在 Taro 中，事件参数(props)都以 on 开头:
     
@@ -24,4 +24,13 @@
     const element = <View onClick={this.onTag} />
     const element2 = <Input onFocus={this.onFocus} />
     const element3 = <CustomElement onAnimationEnd={this.props.onAnimationEnd} />
+    // 注意onGetUserInfo
+    <Button
+        className={isBuy ? 'btn-pay' : 'btn-pay btn-pay--short'}
+        openType={'getUserInfo'}
+        onGetUserInfo={this.handleGetUserInfo}
+        onClick={this.handlePayButtonClick}
+    >
+        <View><Text>立即报名</Text></View>
+    </Button>
 ```
